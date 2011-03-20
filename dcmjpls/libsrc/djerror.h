@@ -31,7 +31,7 @@
 
 #include "dcmtk/config/osconfig.h"
 #include "dcmtk/dcmjpls/djlsutil.h" /* For the OFCondition codes */
-#include "intrface.h" /* CharLS include */
+#include "CharLS/interface.h" /* CharLS include */
 
 /** Helper class for converting between dcmjpls and CharLS error codes
  */

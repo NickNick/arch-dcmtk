@@ -44,7 +44,7 @@
 #include "djerror.h"                 /* for private class DJLSError */
 
 // JPEG-LS library (CharLS) includes
-#include "intrface.h"
+#include "CharLS/interface.h"
 
 E_TransferSyntax DJLSLosslessDecoder::supportedTransferSyntax() const
 {
