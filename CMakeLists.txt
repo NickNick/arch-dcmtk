@@ -36,6 +36,7 @@ SET(DCMTK_PACKAGE_VERSION_NUMBER ${DCMTK_MAJOR_VERSION}${DCMTK_MINOR_VERSION}${D
 
 
 # DCMTK build options
+OPTION(DCMTK_WITH_CHARLS "Configure DCMTK with support for CHARLS" ON)
 OPTION(DCMTK_WITH_TIFF "Configure DCMTK with support for TIFF" ON)
 OPTION(DCMTK_WITH_PNG "Configure DCMTK with support for PNG" ON)
 OPTION(DCMTK_WITH_XML "Configure DCMTK with support for XML" OFF)
