@@ -304,6 +304,7 @@ ENDIF(WITH_THREADS)
 # Start actual compilation tasks
 #-----------------------------------------------------------------------------
 
+
 # Recurse into subdirectories
 FOREACH(module ${DCMTK_MODULES})
   ADD_SUBDIRECTORY(${module})
@@ -320,6 +321,14 @@ FOREACH(module ${DCMTK_MODULES})
     ENDIF(BUILD_SHARED_LIBS)
     
 ENDFOREACH(module)
+
+# Set target properties for modules which are not in DCMTK_MODULE
+SET_TARGET_PROPERTIES(dcmdsig PROPERTIES ${DCMTK_LIBRARY_PROPERTIES})
+SET_TARGET_PROPERTIES(ijg12 PROPERTIES ${DCMTK_LIBRARY_PROPERTIES})
+SET_TARGET_PROPERTIES(ijg16 PROPERTIES ${DCMTK_LIBRARY_PROPERTIES})
+SET_TARGET_PROPERTIES(ijg8 PROPERTIES ${DCMTK_LIBRARY_PROPERTIES})
+SET_TARGET_PROPERTIES(libi2d PROPERTIES ${DCMTK_LIBRARY_PROPERTIES})
+
 
 #-----------------------------------------------------------------------------
 # Installation tasks
